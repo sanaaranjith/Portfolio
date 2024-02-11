@@ -1,0 +1,124 @@
+/* Reset and global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Updated to space around for better spacing on smaller screens */
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+/* Main content styles */
+section {
+  padding: 2em 0;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Link styles */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0.5em 0;
+  }
+
+  nav h1 {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  footer {
+    padding: 0.5em 0;
+  }
+}
+
+/* Add this CSS for the experience section styles */
+
+.experience-item {
+  position: relative;
+}
+
+.experience-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4a5568; /* Adjust color as needed */
+}
+
+#experience h2 {
+  color: #2d3748; /* Adjust color as needed */
+}
+
+#experience h3 {
+  color: #4a5568; /* Adjust color as needed */
+}

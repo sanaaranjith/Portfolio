@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your custom styles for responsiveness here */
+
+    @media screen and (max-width: 768px) {
+      .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      /* Style adjustments for smaller screens */
+      #about .grid-cols-1 {
+        grid-template-columns: 1fr;
+      }
+
+      #skills .grid-cols-1 {
+        grid-template-columns: 1fr;
+      }
+
+      #skills .grid-cols-2,
+      #skills .grid-cols-3 {
+        grid-template-columns: 1fr;
+      }
+
+      #projects .grid-cols-1 {
+        grid-template-columns: 1fr;
+      }
+
+      #projects .grid-cols-2 {
+        grid-template-columns: 1fr;
+      }
+
+      #experience .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #contact form {
+        max-width: none;
+      }
+
+      #footer .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Your Name</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content with Left Padding -->
+  <div class="container mx-auto mt-8 pl-4">
+  
+<!-- About Me Section -->
+<section id="about" class="container mx-auto mt-8 text-center">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left side with text -->
+    <div class="md:order-2">
+      <br>
+      <br>
+      <br>
+      <h3 class="text-3xl font-bold mb-4">
+        Hello! I'm Sana Ranjith
+      </h3>
+      <br>
+      <br>
+      <p class="text-gray-600 leading-loose">
+        I'm a passionate Computer Science student with a love for coding and problem-solving. My journey in the world of technology has been filled with exciting challenges and learning experiences.
+      </p>
+      <p class="text-gray-600 leading-loose">
+        I enjoy turning ideas into reality through innovative solutions. My dedication to leveraging technology for a positive impact drives my continuous quest for knowledge in various domains.
+      </p>
+    </div>
+
+    <!-- Right side with an illustration or image -->
+    <div class="md:order-1 flex items-center justify-center"> <!-- Center alignment -->
+      <!-- Specify the correct path to your image -->
+      <img src="images/demo1.jpg" alt="Your Name" class="rounded-lg shadow-md">
+      <!-- Paragraph centered on the right side -->
+      <div class="text-center ml-4">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="container mx-auto mt-8">
+  <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Skill 1 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">HTML, CSS, JavaScript</h3>
+      <p class="text-gray-600 mb-4">Front-end Web Development</p>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">Python</h3>
+      <p class="text-gray-600 mb-4">Scripting, Data Analysis</p>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">Java</h3>
+      <p class="text-gray-600 mb-4">Object-Oriented Programming</p>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">Database Management (SQL)</h3>
+      <p class="text-gray-600 mb-4">Database Design and Querying</p>
+    </div>
+
+    <!-- Skill 5 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">Web Development (React, Node.js)</h3>
+      <p class="text-gray-600 mb-4">Full-stack Web Development</p>
+    </div>
+
+    <!-- Add more skills as needed -->
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+<section id="projects" class="container mx-auto mt-8">
+  <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Project 1 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">Web Development Project</h3>
+      <p class="text-gray-600 mb-4">July 2023 - September 2023</p>
+      <p class="mb-4">
+        Developed a responsive website using HTML, CSS, and JavaScript. Implemented user authentication and interactive features to enhance the user experience.
+      </p>
+      <a href="#" class="text-blue-500 hover:underline">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md p-6">
+      <h3 class="text-xl font-semibold mb-2">Data Science Project</h3>
+      <p class="text-gray-600 mb-4">October 2023 - December 2023</p>
+      <p class="mb-4">
+        Analyzed and visualized large datasets using Python and various data science libraries. Drew valuable insights and presented findings to the team.
+      </p>
+      <a href="#" class="text-blue-500 hover:underline">View Project</a>
+    </div>
+
+    <!-- Add more project items as needed -->
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="container mx-auto mt-8">
+  <h2 class="text-3xl font-semibold mb-6">Experience</h2>
+
+  <!-- Experience Item 1 -->
+  <div class="experience-item flex items-center mb-8">
+    <div class="experience-circle"></div>
+    <div class="ml-4">
+      <h3 class="text-xl font-semibold">Secretary of IEEE SSET SB </h3>
+      <p class="text-gray-600">May 2023 - Present</p>
+      <p class="mt-2">
+        Contributed to various projects, improving my teamwork and problem-solving skills. Collaborated with a diverse team to address real-world challenges.
+      </p>
+    </div>
+  </div>
+
+  <!-- Experience Item 2 -->
+  <div class="experience-item flex items-center mb-8">
+    <div class="experience-circle"></div>
+    <div class="ml-4">
+      <h3 class="text-xl font-semibold">Woman Innovations Lead of IEDC SSET SB </h3>
+      <p class="text-gray-600">June 2023 - Present</p>
+      <p class="mt-2">
+        Contributed to various entrepreneurial projects, improving my teamwork and problem-solving skills. Collaborated with a diverse team to address real-world challenges.
+      </p>
+    </div>
+  </div>
+
+  <!-- Experience Item 3 -->
+  <div class="experience-item flex items-center mb-8">
+    <div class="experience-circle"></div>
+    <div class="ml-4">
+      <h3 class="text-xl font-semibold">Media Team TinkerHub SSET SB </h3>
+      <p class="text-gray-600">June 2023 - Present</p>
+      <p class="mt-2">
+        Incharge of handling social media accounts of TinkerHub SSET.
+      </p>
+    </div>
+  </div>
+
+  <!-- Add more experience items as needed -->
+
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="container mx-auto mt-8">
+  <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+
+  <form action="#" method="post" class="max-w-md pl-4">
+    <div class="grid grid-cols-1 gap-4">
+      <div>
+        <label for="firstName" class="block text-sm font-medium text-gray-600">First Name</label>
+        <input type="text" id="firstName" name="firstName" class="mt-1 p-2 w-full border rounded-md" required>
+      </div>
+
+      <div>
+        <label for="lastName" class="block text-sm font-medium text-gray-600">Last Name</label>
+        <input type="text" id="lastName" name="lastName" class="mt-1 p-2 w-full border rounded-md" required>
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-600">Email Address</label>
+        <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md" required>
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-600">Message</label>
+        <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+  </div>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-8 mt-8">
+  <div class="container mx-auto flex flex-wrap justify-between">
+
+    <!-- About Me Section -->
+    <div class="mb-3 md:w-1/2">
+      <h3 class="text-lg font-semibold mb-2">About Me</h3>
+      <p>
+        Computer Science student with a passion for problem-solving and coding. 
+      </p>
+      <p>
+        Dedicated to leveraging technology for positive impact.
+      </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="mb-3 md:w-1/6">
+      <h3 class="text-lg font-semibold mb-2">Contact</h3>
+      <p>Email: <a href="mailto:your.email@example.com" class="text-blue-500">your.email@example.com</a></p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="mb-3 md:w-1/3">
+      <h3 class="text-lg font-semibold mb-2">Social Media</h3>
+      <ul class="flex flex-col space-y-2">
+        <li><a href="#" class="text-white hover:text-blue-500">Twitter</a></li>
+        <li><a href="#" class="text-white hover:text-blue-500">LinkedIn</a></li>
+        <!-- Add more social media links as needed -->
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Copyright Information -->
+  <div class="mt-4 text-center">
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- JavaScript for smooth scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
